@@ -1,34 +1,10 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
+      {/* <div className={styles.center}>
         <Image
           className={styles.logo}
           src="/next.svg"
@@ -37,6 +13,32 @@ export default function Home() {
           height={37}
           priority
         />
+      </div> */}
+      <div className={styles.start}>
+        <div className={styles.beginning}>
+          <h3>this is</h3>
+          <h1 className={styles.tittle_Flexy}>FLEXY</h1>
+          <h1 className={styles.tittle}>your way to be better</h1>
+          <p className={styles.small_description}>
+            {" "}
+            we believe that fitness is a journey, not a destination. Our mission
+            is to provide a supportive community and personalized coaching to
+            help you reach your health and wellness goals. From strength
+            training to nutrition planning, we offer a holistic approach to
+            fitness that nourishes your body, mind, and spirit. Join us on our
+            mission to inspire a healthier, happier you!
+          </p>
+          <a className={styles.signIn}>Try out</a>
+        </div>
+        <div className={styles.startImage}>
+          <Image
+            src="/002apple.png"
+            width={380}
+            height={380}
+            alt=""
+            className={styles.TopImg}
+          />
+        </div>
       </div>
 
       <div className={styles.grid}>

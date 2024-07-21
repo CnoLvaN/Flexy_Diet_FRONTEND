@@ -1,0 +1,65 @@
+.header {
+  width: 100%;
+  height: 98px;
+  padding: 0 64px;
+  background: transparent;
+
+  font-size: large;
+  color: rgb(205, 190, 211);
+
+  & {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.headerList {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  font-weight: bolder;
+  font-family: Conthrax, sans-serif;
+}
+
+.menu {
+  margin: 0 auto;
+}
+
+.menu_btn {
+  text-decoration: none;
+}
+
+.menu_btn:hover {
+  color: white;
+}
+
+.active {
+  color: #573aef;
+  padding: 0 6px 4px 6px;
+  border-bottom: 2px solid #573aef;
+}
+
+.active .menu_btn:hover {
+  color: #866eff;
+}
+
+.signIn {
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(70deg, #e76d82, #573aef, #573aef, #89d5f9);
+  box-shadow: inset -4px 4px 5px 0 rgba(255, 255, 255, 0.3);
+  padding: 6px 0;
+  border-radius: 5px;
+  font-weight: bolder;
+  color: white;
+}
+
+.avatar {
+  width: 100px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
