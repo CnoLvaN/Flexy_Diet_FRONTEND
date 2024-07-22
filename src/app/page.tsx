@@ -38,6 +38,9 @@ export default function Home() {
             alt=""
             className={styles.TopImg}
           />
+          <div className={styles.animation_point}></div>
+          <div className={styles.animation_point}></div>
+          <div className={styles.animation_point}></div>
         </div>
       </div>
 

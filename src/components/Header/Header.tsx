@@ -30,12 +30,12 @@ function Header({}: PropsWithChildren<Props>) {
             </a>
           </li>
           <li>
-            <a href="/team" className={styles.menu_btn}>
+            <a href="/contact" className={styles.menu_btn}>
               Contact
             </a>
           </li>
           <li>
-            <a href="/team" className={styles.menu_btn}>
+            <a href="/sign-in" className={styles.menu_btn}>
               Try Out
             </a>
           </li>
