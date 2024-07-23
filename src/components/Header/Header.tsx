@@ -10,33 +10,30 @@ function Header({}: PropsWithChildren<Props>) {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <Image src="/Flexy_logo.png" alt="" width={100} height={64} />
+        <a href="/">
+          <Image src="/Flexy_logo.png" alt="" width={100} height={64} />
+        </a>
       </div>
       <div className={styles.menu}>
         <ul className={styles.headerList}>
           <li className={styles.active}>
-            <a href="/" className={styles.menu_btn}>
+            <a href="#home" className={styles.menu_btn}>
               Home
             </a>
           </li>
           <li>
-            <a href="/about" className={styles.menu_btn}>
+            <a href="#about" className={styles.menu_btn}>
               About
             </a>
           </li>
           <li>
-            <a href="/team" className={styles.menu_btn}>
-              Team
+            <a href="#rates" className={styles.menu_btn}>
+              Rates
             </a>
           </li>
           <li>
-            <a href="/contact" className={styles.menu_btn}>
+            <a href="#contact" className={styles.menu_btn}>
               Contact
-            </a>
-          </li>
-          <li>
-            <a href="/sign-in" className={styles.menu_btn}>
-              Try Out
             </a>
           </li>
         </ul>
@@ -45,7 +42,9 @@ function Header({}: PropsWithChildren<Props>) {
         {authorised ? (
           <Image src="" alt="" width={64} height={64} />
         ) : (
-          <a className={styles.signIn}>Sign In</a>
+          <a href="/sign-in" className={styles.signIn}>
+            Sign In
+          </a>
         )}
       </div>
     </header>

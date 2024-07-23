@@ -14,21 +14,20 @@ export default function Home() {
           priority
         />
       </div> */}
-      <div className={styles.start}>
+      <div id="home" className={styles.start}>
         <div className={styles.beginning}>
           <h3>this is</h3>
           <h1 className={styles.tittle_Flexy}>FLEXY</h1>
           <h1 className={styles.tittle}>your way to be better</h1>
           <p className={styles.small_description}>
             {" "}
-            we believe that fitness is a journey, not a destination. Our mission
-            is to provide a supportive community and personalized coaching to
-            help you reach your health and wellness goals. From strength
-            training to nutrition planning, we offer a holistic approach to
-            fitness that nourishes your body, mind, and spirit. Join us on our
-            mission to inspire a healthier, happier you!
+            We want you to thrive and feel your best with every meal – fuel your
+            body, delight your taste buds, and embrace a healthier lifestyle
+            with our nutritious and delicious food choices every day!
           </p>
-          <a className={styles.signIn}>Try out</a>
+          <a className={styles.signIn} href="/sign-in">
+            Try out
+          </a>
         </div>
         <div className={styles.startImage}>
           <Image
@@ -44,7 +43,26 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.grid}>
+      <div className={styles.about}>
+        <h2 className={styles.aboutLabel}>How it's work?</h2>
+
+        <div className={styles.plan}>
+          <div className={styles.card}>
+            <h2>Registration</h2>
+            <p>You register and enter yor data</p>
+          </div>
+          <div className={styles.card}>
+            <h2>Generation</h2>
+            <p>We generate you personal plan</p>
+          </div>
+          <div className={styles.card}>
+            <h2>Recommendations</h2>
+            <p>We support you and give recommendations</p>
+          </div>
+        </div>
+      </div>
+
+      {/* <div className={styles.grid}>
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           className={styles.card}
@@ -94,7 +112,7 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
-      </div>
+      </div> */}
     </main>
   );
 }
